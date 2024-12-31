@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holiday Planner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin: 0 1rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 0.8rem 1.5rem;
+      margin: 1rem 0.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Fritz's Holiday Planner</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#flights">Flights</a></li>
+        <li><a href="#accommodation">Accommodation</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#eating">eating</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Plan Your Perfect Holiday</h1>
+    <p>From flights to restaurants to activities, we have you covered!</p>
+    <p> With my simplistic design you will be able to plan you whole holiday from flights, to accommodation to activities and of course dining.</p>
+    <button onclick="alert('Get Started!')">Get Started</button>
+  </section>
+
+  <section id="flights">
+    <h2>Search Flights</h2>
+    <form>
+      <label for="from">From:</label>
+      <input type="text" id="from" placeholder="City or Airport" />
+
+      <label for="to">To:</label>
+      <input type="text" id="to" placeholder="City or Airport" />
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" />
+
+      <button type="submit">Search Flights</button>
+    </form>
+  </section>
+
+  <section id="accommodation">
+    <h2>Find Accommodation</h2>
+    <p>Discover the best hotels and rentals for your stay.</p>
+    <button>Search Hotels</button>
+  </section>
+
+  <section id="activities">
+    <h2>Plan Activities</h2>
+    <p>Explore fun activities and events at your destination.</p>
+    <button>View Activities</button>
+  </section>
+
+  <section id="eating">
+    <h2>Plan Dinning/Food</h2>
+    <p>Explore the Various restaurants nearby and book</p>
+    <button>View Food</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Fritz's Holiday Planner. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
